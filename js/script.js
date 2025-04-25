@@ -93,9 +93,9 @@ async function actualizarTiempo(lat, lon) {
   let imageBg = document.body.style.backgroundImage;
 
   if (sunrise < now && now < sunset) {
-    document.body.style.backgroundImage = "url('../assets/bg/day bg.png')";
+    document.body.style.backgroundImage = "url('/assets/bg/day bg.png')";
   } else {
-    document.body.style.backgroundImage = "url('../assets/bg/night bg.png')";
+    document.body.style.backgroundImage = "url('/assets/bg/night bg.png')";
 
     if (lat == "42.845" && lon == "-8.578") {
       title.innerHTML = "Milladoiro";
