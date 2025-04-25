@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="Styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="" role="" aria-label="">
+        <a class="logo" href="#">
+          <img src="assets/img/ames wether blanco.png" alt="" />
+        </a>
+      </nav>
+    </header>
+    <main>
+      <a class="search" href="search.html">
+        <p>Explora otros lugares</p>
+        <img class="search__img" src="assets/search icon.svg" alt="" />
+      </a>
+      <div
+        class="container is-widescreen is-flex is-justify-content-center is-align-items-center"
+      >
+        <div class="card">
+          <div class="card-image">
+            <figure
+              id="backgroundimg"
+              class="image is-4by3 bertamirans is-flex is-align-items-center is-justify-content-center"
+            >
+              <div
+                class="figure__container is-flex is-flex-direction-column is-justify-content-center is-align-items-center"
+              >
+                <p id="hour"></p>
+                <p id="title" class="title"></p>
+                <p id="date"></p>
+              </div>
+              <div class="buttons">
+                <button
+                  id="bertamirans"
+                  class="button is-light mb-2"
+                  onclick="actualizarTiempo(42.845, -8.578)"
+                >
+                  Milladoiro
+                </button>
+                <button
+                  id="milladoiro"
+                  class="button is-light mb-2"
+                  onclick="actualizarTiempo(42.859, -8.650)"
+                >
+                  Bertamiráns
+                </button>
+                <button
+                  id="ames"
+                  class="button is-light mb-2"
+                  onclick="actualizarTiempo(42.884, -8.640)"
+                >
+                  Ames
+                </button>
+              </div>
+            </figure>
+          </div>
+          <div class="card-content has-background-white">
+            <div class="media is-align-items-center">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="" alt="Placeholder image" id="icon" />
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4 has-text-grey-dark" id="temp"></p>
+              </div>
+            </div>
+            <div class="fixed-grid has-2-columns">
+              <div class="content grid">
+                <div class="cell is-flex">
+                  <p class="mr-2">Temperatura máxima:</p>
+                  <p class="has-text-grey-dark" id="tempmax"></p>
+                </div>
+                <div class="cell is-flex">
+                  <p class="mr-2">Temperatura mínima:</p>
+                  <p class="has-text-grey-dark" id="tempmin"></p>
+                </div>
+                <div class="cell is-flex">
+                  <p class="mr-2">Sensación:</p>
+                  <p class="has-text-grey-dark" id="feelslike"></p>
+                </div>
+                <div class="cell is-flex">
+                  <p class="mr-2">Tiempo:</p>
+                  <p class="has-text-grey-dark" id="weather"></p>
+                </div>
+                <div class="cell is-flex">
+                  <p class="mr-2">Humedad:</p>
+                  <p class="has-text-grey-dark" id="humidity"></p>
+                </div>
+              </div>
+            </div>
+            <template id="forecast" class="forecast is-flex">
+              <div class="forecast__card">
+                <h4 class="forecast__hora"></h4>
+                <img class="forecast__icono" src="””" alt="””" />
+                <p class="forecast__temperatura"></p>
+              </div>
+            </template>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

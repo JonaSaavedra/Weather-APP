@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="Styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="" role="" aria-label="">
+        <a class="logo" href="#">
+          <img src="assets/img/ames wether blanco.png" alt="" />
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div class="search__container">
+        <input
+          id="inputValue"
+          class="search__input"
+          placeholder="Escribe el lugar"
+        />
+        <button class="search__img" onclick="getValue()">
+          <img src="assets/search icon.svg" alt="" />
+        </button>
+      </div>
+
+      <a class="back" href="index.html">
+        <img src="assets/arrow back.svg" alt="" />
+        <p>Volver atrás</p>
+      </a>
+
+      <template>
+        <div class="locations">
+          <button id="location" class="location">
+            <div class="list">
+              <p id="city" class="city"></p>
+            </div>
+            <div class="div">
+              <p id="country" class="country"></p>
+            </div>
+          </button>
+        </div>
+      </template>
+
+      <div class="locations__container">
+
+      </div>
+
+
+
+    </main>
+    <script src="./js/search.js"></script>
+  </body>
+</html>

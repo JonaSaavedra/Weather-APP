@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins.ttf);
+}
+
+@font-face {
+    font-family: Alarm;
+    src: url(./fonts/alarm\ clock.ttf);
+}
+
+body {
+ background: transparent;
+ background-size: cover;
+ background-attachment: fixed;
+ min-height: 100vh;
+ height: 150vh;
+ color: black;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 16px;
+ font-family: Poppins;
+}
+
+button {
+ cursor: pointer;
+ border: none;
+}
+
+main{
+    height: auto;
+}
+
+header {
+    z-index: 1;
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 60%; /* Controla el ancho del header */
+    margin: auto;
+    border-radius: 10px; /* Opcional: para bordes redondeados */
+}
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+}
+
+.logo img{
+    width: 70px;
+    margin-top: 10px;
+}
+
+.container{
+    position: relative;
+
+}
+
+.card{
+    width: 600px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 60%);
+}
+
+.image{
+    background-size: cover;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.bertamirans{
+    background-image: url(../assets/img/Bertamirans\ Dia.png);
+}
+
+.milladoiro{
+    background-image: url(../assets/img/Milladoiro\ Dia.png);
+}
+
+.ames{
+    background-image: url(../assets/img/Ames\ Dia.png);
+}
+.amesnight{  
+    background-image: url(../assets/img/Ames\ Noche.png); 
+}
+
+.milladoironight{
+    background-image: url(../assets/img/Milladoiro\ Noche.png);
+}
+
+.bertamiransnight{
+    background-image: url(../assets/img/Bertamirans\ Noche.png);
+}
+
+.content{
+    white-space: nowrap;
+}
+
+.description__white{
+    color: white;
+}
+
+.video__bg{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 0;
+}
+
+
+.navbar{
+    height: auto;
+}
+
+
+#date{
+    color: white;
+}
+
+#hour{
+    color: white;
+    font-family: Alarm;
+    font-size: 50px;
+}
+
+.search{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.226);
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    height: 45px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.search__img{
+    height: 100%;
+}
+
+/* ---------------SEARCH HTML-------------------- */
+
+.search__container{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.226);
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    right: 50%;
+    height: 45px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.search__input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: auto;
+}
+
+.search__img img{
+    height: 100%;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 30px;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.247);
+    margin-top: 10px;
+    color: white;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back img{
+    height: 100%;
+}
+
+.locations{
+    display: flex;
+    justify-content: center;
+}
+
+.location{
+    background-color: white;
+    height: auto;
+    min-width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.location:hover{
+    background-color: rgb(47, 128, 175);
+}
+
+.location:hover .list{
+    color: white;
+}
+
+.location:hover #country{
+    color: rgb(221, 75, 22);
+}
+
+.list{
+    color: grey;
+}
+
+#country{
+    font-size: 2rem;
+    color: rgb(47, 128, 175);
+}
+
