@@ -10,7 +10,7 @@ function getValue() {
 }
 
 async function getCoordinates(inputValue) {
-  const apiURL = `http://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&limit=5&appid=${API_KEY}`;
+  const apiURL = `https://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&limit=5&appid=${API_KEY}`;
 
   try {
     const response = await fetch(apiURL);
